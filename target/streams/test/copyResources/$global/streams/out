@@ -1,0 +1,6 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/ferles/dOLED_Tests/Meeting/Test1/src/test/resources/logicTests,/home/ferles/dOLED_Tests/Meeting/Test1/target/scala-2.11/test-classes/logicTests)[0m
+[0m[[0mdebug[0m] [0m	(/home/ferles/dOLED_Tests/Meeting/Test1/src/test/resources/logicTests/ExampleSpec.scala,/home/ferles/dOLED_Tests/Meeting/Test1/target/scala-2.11/test-classes/logicTests/ExampleSpec.scala)[0m
+[0m[[0mdebug[0m] [0m	(/home/ferles/dOLED_Tests/Meeting/Test1/src/test/resources/logicTests/GeneralTest.scala,/home/ferles/dOLED_Tests/Meeting/Test1/target/scala-2.11/test-classes/logicTests/GeneralTest.scala)[0m
+[0m[[0mdebug[0m] [0m	(/home/ferles/dOLED_Tests/Meeting/Test1/src/test/resources/logicTests/LogicWithFunSuite.scala,/home/ferles/dOLED_Tests/Meeting/Test1/target/scala-2.11/test-classes/logicTests/LogicWithFunSuite.scala)[0m
+[0m[[0mdebug[0m] [0m	(/home/ferles/dOLED_Tests/Meeting/Test1/src/test/resources/logicTests/Logic.scala,/home/ferles/dOLED_Tests/Meeting/Test1/target/scala-2.11/test-classes/logicTests/Logic.scala)[0m

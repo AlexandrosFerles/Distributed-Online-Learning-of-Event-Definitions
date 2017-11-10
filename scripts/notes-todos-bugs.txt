@@ -1,0 +1,79 @@
+++++++
+TODOS:
+++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. ILED: Need to have a version with weak constraints on the examples coverage, to see how it goes.
+In that version there will be no need for SAT checking ath each new window. We should simply run revise and get results.
+
+2. ILED: Implement learning from weak examples.
+
+3. ILED-Streaming: Implement learning by transfering the remaining tree and starting new rules from there (Paliouras)
+
+4. ILED-Streaming: Implement learning from buffered positives (initial idea)
+
+5. ILED-Streaming: Adjust the support set to the streaming setting
+
+6. ILED: Stochastic support set for noise-tollerant (and more efficient) ILED. Perhaps this setting could help in a noise-free setting as well. 
+
+7. XHAIL: Have a version with theory revision as in Corapi's paper. Should work as an extension of the current version,
+where a prior theory can be provided with the input (read from a file) 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++
+Issues-bugs:
++++++++++++++
+
+1. Fix Kernel Set generation. It's too slow due to too many ASP calls.
+ Maybe the repeated queries for Kernel Set generation could be handled on python
+ side to avoid the overhead of repeatedly calling the solver  
+
+2. Fix CrossValidation
+
+
+
+
+
+/*
+* -------------------------------------------------------------------------------------------
+* Utilities for connecting to mongo and getting examples. Fixes for locking below.
+* -------------------------------------------------------------------------------------------
+* 
+* Fix mongo connectivity issues: 
+*                                                              
+* -- Manually remove the lockfile: sudo rm /var/lib/mongodb/mongod.lock  
+*                      
+* -- Run the repair script: sudo -u mongodb mongod -f /etc/mongodb.conf --repair 
+*              
+* -- Start your MongoDB server with sudo start mongodb and verify it is running with sudo 
+*     
+*    status mongodb and by trying to connect to it with mongo test.
+* 
+* --------------------------------------------------------------------------------------------
+*/
+
+
+
+
+/**
+ * 
+ * Pattern matching with case classes. 
+ * 
+/* Pattern match on the class */
+def test(x: Expression) = {
+   x match {
+     case l: Literal => l.skolemize(_, _)
+   }   
+} 
+/* Pattern match on the class and its fields */
+def test2(x: Expression) = {
+   x match {
+     case l @ Literal(x,y,z) => l.skolemize(_,_)
+   }   
+} 
+*/
+
+
+
+
+
